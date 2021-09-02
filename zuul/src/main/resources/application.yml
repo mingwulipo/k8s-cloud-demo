@@ -1,0 +1,29 @@
+spring:
+  profiles:
+    active: dev
+  application:
+    name: zuul
+  main:
+    allow-bean-definition-overriding: true
+
+server:
+  port: 8771
+
+zuul:
+  routes:
+    user:
+      path: /api-user/**
+      serviceId: api-user
+    order:
+      path: /api-order/**
+      serviceId: api-order
+  sensitive-headers: Cookie,Set-Cookie,Authorization,Uid
+
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8761/eureka/
+
+ribbon:
+  ReadTimeout: 60000
+  ConnectTimeout: 60000
