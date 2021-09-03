@@ -10,7 +10,7 @@ spring:
           uri: https://github.com/mingwulipo/k8s-cloud-demo.git
           username: mingwulipo
           password: github8278784
-          label: master
+          label: main
           #仓库目录
           searchPaths: config-repertory
           #加载到本地目录，把整个git仓库拷贝到本地了，不是只拷贝searchPaths指定的目录

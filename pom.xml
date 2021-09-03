@@ -17,7 +17,7 @@
     <parent>
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-starter-parent</artifactId>
-        <version>2.1.1.RELEASE</version>
+        <version>2.0.8.RELEASE</version>
         <!--默认值为../pom.xml
     查找顺序：relativePath元素中的地址–本地仓库–远程仓库
     设定一个空值将始终从仓库中获取，不从本地路径获取，如<relativePath />-->
