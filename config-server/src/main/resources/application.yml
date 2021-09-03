@@ -1,6 +1,8 @@
 spring:
   application:
     name: config-server
+  profiles:
+    active: dev
 
   # git管理配置https://github.com/mingwulipo/config-repertory.git
   cloud:
