@@ -9,7 +9,7 @@ img="harbor.fastai.top/java/eureka:$tag"
 echo "image:$img"
 
 docker build -t $img ./
-docker rm -v -f eureka && docker run -p 8080:8080 -v /etc/localtime:/etc/localtime:ro -v /etc/timezone:/etc/timezone:ro --name eureka -d $img
+docker rm -v -f eureka && docker run -p 8761:8761 -v /etc/localtime:/etc/localtime:ro -v /etc/timezone:/etc/timezone:ro --name eureka -d $img
 
 docker push $img
 echo "推送镜像成功!"

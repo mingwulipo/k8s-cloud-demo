@@ -9,7 +9,7 @@ img="harbor.fastai.top/java/zuul:$tag"
 echo "image:$img"
 
 docker build -t $img ./
-docker rm -v -f zuul && docker run -p 8080:8080 -v /etc/localtime:/etc/localtime:ro -v /etc/timezone:/etc/timezone:ro --name zuul -d $img
+docker rm -v -f zuul && docker run -p 8771:8771 -v /etc/localtime:/etc/localtime:ro -v /etc/timezone:/etc/timezone:ro --name zuul -d $img
 
 docker push $img
 echo "推送镜像成功!"

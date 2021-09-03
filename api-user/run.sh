@@ -9,7 +9,7 @@ img="harbor.fastai.top/java/api-user:$tag"
 echo "image:$img"
 
 docker build -t $img ./
-docker rm -v -f api-user && docker run -p 8080:8080 -v /etc/localtime:/etc/localtime:ro -v /etc/timezone:/etc/timezone:ro --name api-user -d $img
+docker rm -v -f api-user && docker run -p 9010:9010 -v /etc/localtime:/etc/localtime:ro -v /etc/timezone:/etc/timezone:ro --name api-user -d $img
 
 docker push $img
 echo "推送镜像成功!"

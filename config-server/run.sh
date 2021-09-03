@@ -9,7 +9,7 @@ img="harbor.fastai.top/java/config-server:$tag"
 echo "image:$img"
 
 docker build -t $img ./
-docker rm -v -f config-server && docker run -p 8080:8080 -v /etc/localtime:/etc/localtime:ro -v /etc/timezone:/etc/timezone:ro --name config-server -d $img
+docker rm -v -f config-server && docker run -p 9050:9050 -v /etc/localtime:/etc/localtime:ro -v /etc/timezone:/etc/timezone:ro --name config-server -d $img
 
 docker push $img
 echo "推送镜像成功!"
