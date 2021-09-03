@@ -2,8 +2,8 @@ package org.study.cloud.zuul.filter;
 
 import com.alibaba.fastjson.JSONObject;
 import org.springframework.stereotype.Component;
-import org.study.cloud.zuul.util.Result;
-import org.study.cloud.zuul.util.ResultCodeEnum;
+import org.study.cloud.common.Result;
+import org.study.cloud.common.ResultCodeEnum;
 
 import javax.servlet.*;
 import javax.servlet.http.HttpServletRequest;

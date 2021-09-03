@@ -4,9 +4,9 @@ import com.alibaba.fastjson.JSON;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Component;
 import org.springframework.web.filter.OncePerRequestFilter;
-import org.study.cloud.zuul.util.HttpUtil;
-import org.study.cloud.zuul.util.RequestWrapper;
-import org.study.cloud.zuul.util.ResponseWrapper;
+import org.study.cloud.common.HttpUtil;
+import org.study.cloud.common.RequestWrapper;
+import org.study.cloud.common.ResponseWrapper;
 
 import javax.servlet.FilterChain;
 import javax.servlet.ServletException;

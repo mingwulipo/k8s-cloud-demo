@@ -1,4 +1,4 @@
-package org.study.cloud.zuul.util;
+package org.study.cloud.common;
 
 import javax.servlet.ServletOutputStream;
 import javax.servlet.WriteListener;

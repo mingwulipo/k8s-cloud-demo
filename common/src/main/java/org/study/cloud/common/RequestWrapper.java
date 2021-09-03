@@ -1,4 +1,4 @@
-package org.study.cloud.zuul.util;
+package org.study.cloud.common;
 
 import com.alibaba.fastjson.JSON;
 import com.alibaba.fastjson.JSONObject;

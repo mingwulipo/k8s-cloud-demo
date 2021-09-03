@@ -1,4 +1,4 @@
-package org.study.cloud.zuul.util;
+package org.study.cloud.common;
 
 /**
  * Created by Administrator on 2019\8\17 0017.

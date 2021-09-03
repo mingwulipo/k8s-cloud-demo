@@ -12,6 +12,9 @@
         <module>eureka</module>
         <module>zuul</module>
         <module>config-server</module>
+        <module>api-order</module>
+        <module>common</module>
+        <module>api-user</module>
     </modules>
 
     <parent>

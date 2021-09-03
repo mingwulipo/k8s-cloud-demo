@@ -1,4 +1,4 @@
-package org.study.cloud.zuul.util;
+package org.study.cloud.common;
 
 /**
  * 业务异常
