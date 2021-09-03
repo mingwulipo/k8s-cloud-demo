@@ -1,4 +1,4 @@
-package org.study.cloud.zuul;
+package org.study.cloud.common;
 
 import com.alibaba.druid.pool.DruidDataSource;
 import com.alibaba.druid.support.http.StatViewServlet;

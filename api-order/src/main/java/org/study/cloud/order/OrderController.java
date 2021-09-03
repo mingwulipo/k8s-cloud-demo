@@ -32,7 +32,9 @@ public class OrderController {
         dto.setMoney("12.3");
         dto.setOrderNo("orderNo");
         dto.setCreateTime(new Date());
-        return Result.ok(Collections.singletonList(dto));
+        Result result = Result.ok(Collections.singletonList(dto));
+        log.info("/order/listOrder | result = {}", result);
+        return result;
     }
 
 }

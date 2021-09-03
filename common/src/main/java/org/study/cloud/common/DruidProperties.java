@@ -1,4 +1,4 @@
-package org.study.cloud.zuul;
+package org.study.cloud.common;
 
 
 import lombok.Data;

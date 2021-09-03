@@ -8,6 +8,8 @@ import org.springframework.web.bind.annotation.RestController;
 import org.study.cloud.common.ApiOrderFeign;
 import org.study.cloud.common.Result;
 
+import javax.servlet.http.HttpServletRequest;
+
 /**
  * Created by Administrator on 2019\8\17 0017.
  */
@@ -24,8 +26,10 @@ public class OrderController {
      * @date 2019-10-25 11:19
      */
     @GetMapping("listOrder")
-    public Result listOrder() {
+    public Result listOrder(HttpServletRequest request) {
+        log.info(request.getRequestURL().toString());
         Result result = apiOrderFeign.listOrder();
+        log.info("/order/listOrder | result = {}", result);
         return result;
     }
 }
