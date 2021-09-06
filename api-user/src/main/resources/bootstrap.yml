@@ -6,11 +6,11 @@ spring:
     config:
       #配置中心服务集群，两个都要设置，enabled必须是true
       #缺点：开发时，必须启动eureka注册中心
-      #discovery:
-        #enabled: true
-        #serviceId: config-server
+      discovery:
+        enabled: true
+        serviceId: config-server
       #单个配置中心服务
       #优点：开发时，不需要启动eureka注册中心，开发方便
-      uri: http://localhost:9050
+      #uri: http://localhost:9050
       profile: dev
       label: main

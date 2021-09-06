@@ -12,5 +12,5 @@ spring:
       #单个配置中心服务
       #优点：开发时，不需要启动eureka注册中心，开发方便
       #uri: http://localhost:9050
-      #profile: dev
+      profile: dev
       label: main
