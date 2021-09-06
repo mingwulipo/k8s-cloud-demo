@@ -104,4 +104,20 @@
             <artifactId>spring-cloud-starter-config</artifactId>
         </dependency>
     </dependencies>
+
+
+    <distributionManagement>
+        <!--settings.xml配置了用户名和密码，deploy时候打包到私服的url中-->
+        <site>
+            <id>insigma</id>
+            <name>insigma</name>
+            <url>http://maven.insigma.com:9081/nexus/content/repositories/releases</url>
+        </site>
+        <repository>
+            <id>insigma-snapshots</id>
+            <name>insigma-snapshots</name>
+            <url>http://maven.insigma.com:9081/nexus/content/repositories/snapshots</url>
+        </repository>
+    </distributionManagement>
+
 </project>
