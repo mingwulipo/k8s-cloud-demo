@@ -3,8 +3,6 @@ spring:
     active: dev
   application:
     name: zuul
- # main:
-  #  allow-bean-definition-overriding: true
 
 server:
   port: 8771
