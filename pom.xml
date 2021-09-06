@@ -151,7 +151,8 @@
 
 
     <distributionManagement>
-        <!--settings.xml配置了用户名和密码，deploy时候打包到私服的url中-->
+        <!--settings.xml配置了用户名和密码，deploy时候打包到私服的url中。
+        把整个项目打包到私服，单独打包common报错，说必须有<packaging>pom</packaging>-->
         <site>
             <id>insigma</id>
             <name>insigma</name>

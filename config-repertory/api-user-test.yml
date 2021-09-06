@@ -31,8 +31,3 @@ spring:
       connectionProperties: druid.stat.mergeSql=true;druid.stat.slowSqlMillis=500
       # 合并多个DruidDataSource的监控数据
       useGlobalDataSourceStat: true
-
-eureka:
-  client:
-    serviceUrl:
-      defaultZone: http://192.168.31.135:8761/eureka/
