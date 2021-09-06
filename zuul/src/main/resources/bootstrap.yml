@@ -1,5 +1,3 @@
 spring:
-  cloud:
-    config:
-      label: main
-      profile: dev
+  profiles:
+    active: dev
