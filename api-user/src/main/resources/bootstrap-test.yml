@@ -11,7 +11,7 @@ spring:
         #serviceId: config-server
       #单个配置中心服务
       #优点：开发时，不需要启动eureka注册中心，开发方便
-      uri: http://192.168.31.135:9050
+      uri: http://192.168.31.137:9050
       label: main
       username: mingwulipo
       password: github8278784
