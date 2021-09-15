@@ -1,8 +1,8 @@
 eureka:
   client:
     serviceUrl:
-      defaultZone: http://192.168.31.137:8761/eureka/
+      defaultZone: eureka:8761/eureka/
   instance:
     preferIpAddress: true
-    ip-address: 192.168.31.137
+    ip-address: 192.168.111.131
     instance-id: ${eureka.instance.ip-address}:${spring.application.name}:${server.port}
