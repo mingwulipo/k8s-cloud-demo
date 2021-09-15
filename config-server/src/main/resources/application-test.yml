@@ -1,7 +1,7 @@
 eureka:
   client:
     serviceUrl:
-      defaultZone: 192.168.111.131:8761/eureka/
+      defaultZone: http://192.168.111.131:8761/eureka/
   instance:
     preferIpAddress: true
     ip-address: 192.168.111.131
