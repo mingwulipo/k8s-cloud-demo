@@ -1,6 +1,6 @@
 eureka:
   instance:
-    hostname: 10.107.30.51
+    hostname: 192.168.111.131
   client:
     registerWithEureka: false
     fetchRegistry: false
