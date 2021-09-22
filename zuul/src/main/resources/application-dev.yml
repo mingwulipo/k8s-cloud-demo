@@ -3,7 +3,7 @@ eureka:
     serviceUrl:
       defaultZone: http://localhost:8761/eureka/
   instance:
-    #默认是主机名（容器id）注册服务，如DESKTOP-473VGKE:zuul:8771，容器时zuul找不到服务。改成ip注册服务，变成localhost:api-user:9010。
+    #默认是主机名（容器id）注册服务，如DESKTOP-473VGKE:zuul:8771，容器时zuul找不到服务。改成ip注册服务，变成localhost:zuul:9010。
     preferIpAddress: true
     ip-address: localhost
     instance-id: ${eureka.instance.ip-address}:${spring.application.name}:${server.port}
